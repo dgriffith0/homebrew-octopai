@@ -1,20 +1,20 @@
 class Octopai < Formula
   desc "AI-powered CLI assistant for managing multiple projects"
   homepage "https://github.com/dgriffith0/octopai"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dgriffith0/octopai/releases/download/v0.1.0/octopai-aarch64-apple-darwin.tar.xz"
-      sha256 "673ff3d84493fc8f8cf546427fcab8cc8b123e92736ea11f97535556a98a293b"
+      url "https://github.com/dgriffith0/octopai/releases/download/v0.2.0/octopai-aarch64-apple-darwin.tar.xz"
+      sha256 "5c5a32ef1cb48446fb839ce24a086de6a31a8b77e1cd0dc8d67c14918e006132"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dgriffith0/octopai/releases/download/v0.1.0/octopai-x86_64-apple-darwin.tar.xz"
-      sha256 "f3997a3d28bafdd5f566ee48d3bbb745565574b80751b039fcf7e73dbf306dfe"
+      url "https://github.com/dgriffith0/octopai/releases/download/v0.2.0/octopai-x86_64-apple-darwin.tar.xz"
+      sha256 "fe0c9dfccea6d741a44bce50d9eba555a0feeed172ce9164524bd202b5bcc259"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/dgriffith0/octopai/releases/download/v0.1.0/octopai-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f7b990a91fc087a8c5d3efc64f8c696f8eaad30fc01be0fba84536f1633961f5"
+      url "https://github.com/dgriffith0/octopai/releases/download/v0.2.0/octopai-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "49f4e702889621f81e7b146a3d138dfeebe4fdd781746fd37efb0c8d7679c3e9"
   end
   license "MIT"
 
